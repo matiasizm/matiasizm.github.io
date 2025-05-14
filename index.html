@@ -10,12 +10,12 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f9fc;
-      color: #333;
+      background: #181a20;
+      color: #e5e7eb;
     }
     header {
-      background: #1f2937;
-      color: white;
+      background: #23263a;
+      color: #f3f4f6;
       padding: 2rem;
       text-align: center;
     }
@@ -25,43 +25,58 @@
     }
     header p {
       font-size: 1.2rem;
-      color: #d1d5db;
+      color: #a1a1aa;
     }
     .section {
       padding: 3rem 5%;
       max-width: 1000px;
       margin: auto;
+      background: #23263a;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+      margin-bottom: 2rem;
     }
     .section h2 {
-      border-bottom: 2px solid #3b82f6;
+      border-bottom: 2px solid #60a5fa;
       padding-bottom: 0.5rem;
       margin-bottom: 1.5rem;
-      color: #1f2937;
+      color: #f3f4f6;
     }
     .card {
-      background: white;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: #181a20;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
       margin-bottom: 2rem;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
+      border: 1px solid #23263a;
     }
     .card img {
       width: 100%;
       height: auto;
+      display: block;
+      background: #23263a;
     }
     .card-content {
       padding: 1.5rem;
+      color: #e5e7eb;
     }
     footer {
       text-align: center;
       padding: 2rem;
-      background: #1f2937;
-      color: white;
+      background: #23263a;
+      color: #a1a1aa;
       font-size: 0.9rem;
     }
     a {
-      color: #3b82f6;
+      color: #60a5fa;
       text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #93c5fd;
+    }
+    h3 {
+      color: #93c5fd;
     }
   </style>
 </head>
@@ -69,42 +84,91 @@
 
 <header>
   <h1>Matías Zúñiga Martínez</h1>
-  <p>Engineer | AI Innovator | Project Leader</p>
+  <p>Ingeniero Civil con un enfoque multidisciplinario en tecnologías avanzadas, incluyendo inteligencia artificial, visión por computadora y metodologías como BIM. Mi trayectoria se ha centrado en el liderazgo tecnológico, actualmente como CTO en AndesLab.</p>
   <p><a href="mailto:matiasizm93@gmail.com">matiasizm93@gmail.com</a> | <a href="https://www.linkedin.com/in/matías-zúñiga-martínez-0bb61417a/" target="_blank">LinkedIn</a></p>
 </header>
 
+<div style="text-align: center; margin-bottom: 2rem;"></div>
+
 <section class="section">
-  <h2>AI in Engineering & Construction</h2>
-  <div class="card">
-    <img src="https://via.placeholder.com/600x400?text=AI+in+Construction" alt="AI Project Image">
+  <h2>Estudios</h2>
+  <div class="card" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+    
     <div class="card-content">
-      <p>As CTO at <strong>AndesLab</strong>, I lead the development of intelligent systems to optimize building design and performance using AI. At <strong>Soleit</strong>, I implemented computer vision algorithms to generate biomechanical models from 3D foot scans. These innovations transformed traditional engineering workflows into data-driven systems.</p>
+      <strong>Pontificia Universidad Católica de Chile</strong><br>
+      Ingeniería, Ingeniería civil<br>
+      <span style="color:#a1a1aa;">2012 - 2017</span>
+    </div>
+  </div>
+  <div class="card" style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+  
+    <div class="card-content">
+      <strong>Universidad de Chile</strong><br>
+      Diploma de Postítulo en Inteligencia Artificial<br>
+      <span style="color:#a1a1aa;">ago. 2021 - ene. 2022</span>
+    </div>
+  </div>
+  <div class="card" style="display: flex; align-items: center; gap: 1.5rem;">
+   
+    <div class="card-content">
+      <strong>Universidad de Santiago de Chile</strong><br>
+      Diplomado en Arquitectura y Seguridad Cloud, Ciencias de la computación<br>
+      <span style="color:#a1a1aa;">abr. 2024 - ene. 2025</span>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Project Leadership & Innovation</h2>
+  <h2>Experiencia Profesional</h2>
   <div class="card">
-    <img src="https://via.placeholder.com/600x400?text=Project+Management+Tools" alt="Project Management">
+    <img src="resources/andeslab.jpg" alt="AndesLab">
     <div class="card-content">
-      <p>Throughout my roles at <strong>BTD</strong> and <strong>PRDW Consulting</strong>, I directed R&D efforts, introduced BIM methodologies, and created tools integrated into industry software (Revit, AutoCAD, ETABS). My leadership has driven cross-functional teams to deliver high-impact solutions in complex engineering environments.</p>
+      <h3>CTO – AndesLab</h3>
+      <p>Lidero el desarrollo de sistemas inteligentes para optimizar el diseño y desempeño de edificaciones mediante IA tales como árboles de decisión, redes neuronales y modelos de lenguaje. Implementación de soluciones innovadoras que transforman procesos tradicionales en flujos de trabajo basados en datos.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="resources/soleit.jpg" alt="Soleit">
+    <div class="card-content">
+      <h3>Senior Software Engineer – Soleit</h3>
+      <p>Desarrollo de algoritmos de visión por computadora para generar modelos biomecánicos a partir de escaneos 3D de pies, mejorando la precisión y personalización en aplicaciones ortopédicas. Diseño de API para integración de modelos de lenguaje y generación de consultas SQL. FineTunning de modelos de lenguaje para consultar informes en PDF.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/600x400?text=BTD" alt="BTD">
+    <div class="card-content">
+      <h3>Líder de I+D  – BTD</h3>
+      <p>Dirección de proyectos de investigación y desarrollo, introducción de metodologías BIM y creación de herramientas integradas en software de la industria (Revit, AutoCAD, ETABS). Impulso de equipos multidisciplinarios para soluciones de alto impacto.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="resources/lungparenchyma.jpeg" alt="Investigación Parénquima Pulmonar">
+    <div class="card-content">
+      <h3>Investigación – Parénquima Pulmonar</h3>
+      <p> Análisis científico y de datos aplicado en el estudio del parénquima pulmonar, contribuyendo al avance en diagnósticos y tratamientos en el área de la salud.</p>
     </div>
   </div>
 </section>
 
 <section class="section">
-  <h2>Using LLMs to Automate SQL Workflows</h2>
+  <h2>Otros</h2>
   <div class="card">
-    <img src="https://via.placeholder.com/600x400?text=SQL+with+LLM" alt="LLM SQL Automation">
     <div class="card-content">
-      <p>In a project for <strong>RedPine</strong>, I integrated large language models (LLMs) to automate the generation and optimization of SQL queries. This dramatically reduced time spent on data handling, enabling engineers to focus on insights rather than syntax.</p>
+      <h3>Consultor en IA, Automatización y Gestión de Proyectos</h3>
+      <ul>
+        <li><strong>Asesor IA y Data Science - RedPine</strong> Consultoría en proyectos de IA y Data Science para softwarefactory</li>
+        <li><strong>Modelos de Lenguaje (LLM):</strong> Integración de LLMs para automatizar y optimizar procesos empresariales, generación y simplificación de consultas SQL.</li>
+        <li><strong>Visión por Computadora:</strong> Desarrollo de soluciones para análisis de imágenes, reconocimiento de patrones y extracción de información relevante.</li>
+        <li><strong>Diseño de APIs:</strong> Arquitectura y desarrollo de APIs robustas para integración de sistemas y automatización de flujos de trabajo.</li>
+        <li><strong>Gestión de Proyectos:</strong> Planificación, seguimiento y entrega de proyectos tecnológicos utilizando metodologías ágiles y herramientas como cartas Gantt.</li>
+      </ul>
+    
     </div>
   </div>
 </section>
 
 <footer>
-  &copy; 2025 Matías Zúñiga Martínez — Designed with AI precision
+  &copy; 2025 Matías Zúñiga Martínez — Diseñado con precisión IA
 </footer>
 
 </body>
